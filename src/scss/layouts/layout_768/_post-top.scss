@@ -1,0 +1,28 @@
+.slider-top{
+    height: 600px;
+    @include e(content-container){
+        width: 350px;
+    }
+    @include e (content){
+    @include m (title){
+        font-size: 30px;
+    }
+    @include m (heading){
+        font-family: 'Work Sans', sans-serif;
+        margin: 0 0 20px;
+    }
+    @include m (btn-container){
+
+    }
+    @include m (btn){
+        font-size: 16px;
+        padding: 20px 40px;
+        letter-spacing: 1.5px;
+    }
+    }
+@include e (button){
+    @include m (next){
+        left: 93%;
+    }
+}
+}

@@ -1,0 +1,43 @@
+.slider-top{
+    @include e(content-container){
+        width: 440px;
+        left: 55%;
+    }
+    @include e (content){
+    @include m (title){
+        font-size: 30px;
+    }
+    @include m (heading){
+        font-family: 'Work Sans', sans-serif;
+    }
+    @include m (btn-container){
+
+    }
+    @include m (btn){
+        &:hover {
+            background-color: $red;
+            border: 0px;
+            transition: 1s;
+        }
+    }
+    }
+    @include e (button){
+        @include m (next){
+            left: 95%;
+        }
+    }
+    @include e (btn-prev){
+        cursor: pointer;
+        &:hover {
+            background-color: $red;
+            transition: 0.5s;
+        }
+    }
+    @include e (btn-next){
+        cursor: pointer;
+        &:hover {
+            background-color: $red;
+            transition: 0.5s;
+        }
+    }
+}

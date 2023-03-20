@@ -1,9 +1,11 @@
 //fonts
-$google-font: "https://fonts.googleapis.com/css?family=Ubuntu:400,500";
+$google-font: "https://fonts.googleapis.com/css2?family=Rajdhani&family=Roboto:ital,wght@0,300;0,500;1,300&family=Work+Sans:wght@700";
 $prefix: prefix- !default;
 $baseFontSize: 16px;
-$baseFontFamily: "Ubuntu", sans-serif;
+$baseFontFamily: 'Roboto', sans-serif;
+$lightFontWeight: 300;
 $mediumFontWeight: 500;
+$boldFontWeight: 600;
 
 $mobilePadding: (12px / $baseFontSize) * 1rem;
 $desktopPadding: 1rem;
@@ -17,18 +19,17 @@ $usersFilesPath: "../userfiles/";
 // Colors
 $black: #000000;
 $white: #ffffff;
-$blue: #0d6efd !default;
-$indigo: #6610f2 !default;
-$purple: #6f42c1 !default;
-$pink: #d63384 !default;
-$red: #dc3545 !default;
+$red: #eb0028;
+$gray: #8a8a8a;
+$searchFormColor: #f4f4f4;
+$supportColor: #f9f9f9;
 
 $colors: (
   "black": $black,
   "white": $white,
-  "blue": $blue,
-  "indigo": $indigo,
-  "purple": $purple,
-  "pink": $pink,
   "red": $red,
+  "gray": $gray,
+  "searchFormColor": $searchFormColor,
+  "supportColor": $supportColor,
 ) !default;
+ 

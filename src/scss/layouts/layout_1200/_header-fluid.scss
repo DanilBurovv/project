@@ -1,0 +1,19 @@
+.header-nav{
+    @include e (list){
+        display: flex;
+        margin-top: 12px;
+        list-style-type: none;
+    }
+    @include e (link){
+        text-decoration: none;
+        color: $black;
+        margin: 25px 15px;
+        @include m (home){
+            color: $red;
+        }
+    }
+}
+
+.header-menu{
+    display: none;
+}

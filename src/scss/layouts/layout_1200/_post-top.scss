@@ -1,0 +1,18 @@
+.slider-top {
+    height: 700px;
+        @include e(content-container){
+            width: 760px;
+            left: 37%;
+            top: 20%;
+        }
+        @include e (content){
+        @include m (heading){
+            font-size: 100px;
+        }
+    }
+    @include e (button){
+        @include m (next){
+            left: 96%;
+        }
+    }
+    }

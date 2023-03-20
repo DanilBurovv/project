@@ -1,0 +1,19 @@
+.support{
+    @include e (link){
+        &:hover {
+            color: $red;
+            transition: 0.5s;
+        }
+    }
+    @include e (content){
+    }
+}
+.support-wrapper{
+&:hover img{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+&:not(:hover )img{
+    transition: 0.5s;
+}
+}

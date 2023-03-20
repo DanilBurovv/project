@@ -1,0 +1,20 @@
+.header-fluid{
+    justify-content: initial;
+    @include e (logo) {
+    }
+}
+
+.header-menu {
+}
+
+.header-links {
+ flex-basis: initial;
+@include e (link){
+    margin-top: -6px;
+}
+}
+
+.header-currency{
+    margin-top: -20px;
+    margin-right: 30px;
+}

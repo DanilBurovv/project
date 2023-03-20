@@ -1,0 +1,25 @@
+.support{
+    background-color: $supportColor;
+    margin-bottom: 50px;
+    border-bottom: 1px solid $gray;
+    @include e (img){
+        max-width: 55px;
+    }
+    @include e (content-container){
+        padding-left: 30px;
+    }
+    @include e (link){
+        text-decoration: none;
+        color: $black;
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+    @include e (content){
+        color: $gray;
+        margin: 10px 0 0;
+    }
+}
+.support-wrapper{
+    display: flex;
+    margin: 30px;
+}

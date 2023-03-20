@@ -1,0 +1,13 @@
+.search-form{
+    @include e (btn){
+        cursor: pointer;
+        &:hover{
+        background-color: $red;
+        transition: 0.5s;
+    }
+}
+}
+
+.exit-btn{
+    cursor: pointer;
+}

@@ -1,0 +1,19 @@
+.slider-top {
+    @include e(content-container){
+        margin-right: 100px;
+        margin-left: 100px;
+    }
+    @include e (content){
+    @include m (title){
+        font-size: 22px;
+    }
+    @include m (heading){
+        font-size: 30px;
+    }
+}
+@include e (button){
+    @include m (next){
+        left: 89%;
+    }
+}
+}

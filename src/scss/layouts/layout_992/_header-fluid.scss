@@ -1,0 +1,22 @@
+.header-currency{
+    cursor: pointer;
+    margin-right: 80px;
+}
+
+.header-nav{
+    @include e (link){
+        &:hover {
+            color: $red;
+            transition: 0.5s;
+        }
+    }
+}
+
+.header-links{
+    @include e (link){
+        &:hover svg{
+            fill: $red;
+            transition: 0.5s;
+        }
+    }
+}

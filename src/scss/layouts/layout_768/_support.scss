@@ -1,0 +1,10 @@
+.support{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    @include e (link){
+        font-size: 16px;
+    }
+}
+.support-wrapper{
+    justify-content: center;
+}

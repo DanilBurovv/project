@@ -1,0 +1,15 @@
+.slider-top {
+    @include e(content-container){
+        width: 300px;
+        left: 50%;
+        top: 25%;
+        margin-right: auto;
+        margin-left: auto;
+        background-color: initial;
+    }
+    @include e (button){
+        @include m (next){
+            left: 92%;
+        }
+    }
+}

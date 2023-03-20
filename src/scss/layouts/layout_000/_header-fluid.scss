@@ -1,0 +1,48 @@
+.header-fluid{
+    display: flex;
+    padding: 15px 0;
+    flex-wrap: wrap;
+    @include e (logo){
+        max-width: 129px;
+        margin-left: 60px;
+        margin-right: auto;
+    }
+}
+
+.header-nav {
+    display: flex;
+    flex-wrap: wrap;
+    @include e (list){
+        display: none;
+    }
+}
+
+.header-menu{
+    padding: 0 10px;
+    margin-top: 15px;
+    margin-right: 20px;
+    @include e (span){
+        display: none;
+    }
+}
+
+.header-links {
+    flex-basis: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    @include e (link){
+        padding: 0 5px;
+    }
+}
+
+.header-currency{
+    font-family: $baseFontFamily;
+    font-size: 1rem;
+    font-weight: $lightFontWeight;
+    text-transform: uppercase;
+    margin-top: -2px;
+    margin-left: 10px;
+    border: none;
+    outline: none;
+}

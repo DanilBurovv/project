@@ -1,0 +1,7 @@
+.slider-top {
+    @include e (button){
+        @include m (next){
+            left: 91%;
+        }
+    }
+}
