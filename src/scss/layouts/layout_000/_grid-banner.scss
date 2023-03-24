@@ -1,0 +1,97 @@
+.grid-banner-container{
+    margin-bottom: 100px;
+}
+
+.grid-banner{
+    @include e (box){
+        width: 100vw;
+        height: 450px;
+        overflow: hidden;
+    }
+    @include e (block){
+        width: 100%;
+        height: 100%;
+        transition: transform 1s ease;
+        &:hover .grid-banner__meta{
+            transform: translate(0, 0);
+            opacity: 1;
+        }
+        &:hover{
+            transform: scale(1.2);
+        }
+    @include m (first){
+        @include bg-img{
+            background-image: url(../../../i/gal5.png);
+        }
+    }
+    @include m (second){
+            background-image: url(../../../i/gal1.png);
+            background-repeat: no-repeat;
+            background-position: 20% center;
+            background-size: cover;            
+    }
+    @include m (third){
+        @include bg-img{
+            background-image: url(../../../i/gal2.png);
+        }
+    }
+    @include m (fourth){
+        @include bg-img{
+            background-image: url(../../../i/gal3.png);
+        }
+    }
+    @include m (fifth){
+        @include bg-img{
+            background-image: url(../../../i/gal4.png);
+        }
+    }
+}
+    @include e (sub-title){
+        color: $white;
+        font-size: 18px;
+        font-weight: $mediumFontWeight;
+        margin: 0 30px 15px;
+        text-transform: uppercase;
+    }
+    @include e (title){
+        color: $white;
+        font-size: 34px;
+        font-family: 'Rajdhani', sans-serif;
+        margin: 0 30px 15px;
+        text-transform: uppercase;
+    }
+    @include e (content-container){
+        margin: 0;
+        position: relative;
+        height: 100%;
+        overflow: hidden;
+    }
+    @include e (link){
+        text-decoration: none;
+        color: $black;
+    }
+    @include e (btn){
+        margin: 0 30px 30px;
+        padding: 15px 18px;
+        background-color: $white;
+        border-radius: 50px;
+        max-width: fit-content;
+    }
+    @include e (meta){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: white;
+        padding: 1rem 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        opacity: 0;
+        transform: translate(-100%, -100%);
+        transition: 0.3s ease-in;
+        @include m (first){justify-content: end;}
+    }
+}

@@ -1,0 +1,42 @@
+.slogan{
+    padding: 100px 30px;
+    text-align: center;
+    @include e (content){
+        @include content;
+        color: $white;
+        font-size: 18px;
+        text-transform: uppercase;
+        margin: 0 0 25px;
+        letter-spacing: 5px;
+    }
+    @include e (title){
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 43px;
+        color: $white;
+        margin: 0 0 50px;
+    }
+    @include e (btn-link){
+        text-decoration: none;
+        color: $black;
+    }
+    @include e (btn){
+        padding: 12px 15px;
+        background-color: $white;
+        border-radius: 50px;
+    }
+}
+
+.slogan-container{
+    background-image: url(../../../i/banner.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-bottom: 100px;
+}
+
+.slogan-wrapper{
+    background-color: rgb(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+}

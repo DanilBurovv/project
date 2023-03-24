@@ -1,0 +1,8 @@
+.site-footer{
+    @include e (bottom){
+        justify-content: flex-start;
+    }
+    @include e (bottom-menu){
+        justify-content: flex-start;
+    }
+}

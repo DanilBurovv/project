@@ -10,4 +10,8 @@
 
 .exit-btn{
     cursor: pointer;
+    &:hover svg{
+        fill: $red;
+        transition: 0.2s;
+    }
 }

@@ -1,0 +1,29 @@
+.grid-banner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @include e (box){
+        width: auto;
+        @include m (first){
+            grid-column: span 2;
+        }
+    }
+    @include e (link){
+        font-size: 16px;
+    }
+    @include e (btn){
+        padding: 15px 40px;
+        @include m (first){
+            margin: 0 60px 30px;
+        }
+    }
+    @include e (title){
+        @include m (first){
+            margin: 0 60px 15px;
+        }
+    }
+    @include e (sub-title){
+        @include m (first){
+            margin: 0 60px 15px;
+        }
+    }
+}

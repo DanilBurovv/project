@@ -1,0 +1,11 @@
+.slogan{
+    padding: 150px 45px;
+    max-width: 860px;
+    @include e (btn){
+        @include btn-hover;
+        &:hover a{
+            color: $white;
+            transition: 0.5s;
+        }
+    }
+}

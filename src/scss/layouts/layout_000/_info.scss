@@ -1,0 +1,124 @@
+.info{
+    padding: 0 30px;
+    display: grid;
+    margin-bottom: 50px;
+    @include e (head){
+        @include head;
+    }
+    @include e (heading-discription){
+        @include heading-discription;
+    }
+    @include e (block){
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    @include e (icon){
+        margin: 0 0 20px;
+    }
+    @include e (link){
+        @include link;
+    }
+    @include e (heading-link){
+       @include heading-link;
+    }
+    @include e (content){
+        @include content;
+    }
+}
+
+
+.add-info{
+    margin: 0 0 100px;
+    padding: 0 30px;
+    @include e (head){
+        @include head;
+    }
+    @include e (heading-discription){
+        @include heading-discription;
+    }
+    @include e (content-container){
+        max-width: 80vw;
+        margin: 0 auto;
+        display: grid;
+    }
+    @include e (content-title){
+        font-size: 24px;
+        text-transform: uppercase;
+        margin: 0 0 15px
+    }
+    @include e (content){
+        @include content;
+    }
+    @include e (img-container){
+        width: fit-content;
+        grid-row: 3;
+    }
+    @include e (img){
+        max-width: 80vw;
+    }
+    @include e (figure){
+        margin: 0;
+    }
+}
+
+
+.more-info{
+    padding:30px;
+    @include e (head){
+        @include head;
+        color: $white;
+    }
+    @include e (heading-discription){
+        @include heading-discription;
+    }
+    @include e (blocks-container){
+        display: grid; 
+        gap: 30px;
+        margin-bottom: 30px;
+    }
+    @include e (block){
+        padding: 30px;
+        background-color: $white;
+        * {
+            text-align: center;
+        }
+    }
+    @include e (circle){
+        padding: 15px 20px;
+        border-radius: 100%;
+        color: $white;
+        background-color: $black;
+        width: fit-content;
+        height: fit-content;
+        margin: 0 auto;
+    }
+    @include e (circle-content){
+        width: fit-content;
+        margin: 0;
+    }
+    @include e (title){
+        font-size: 18px;
+        text-transform: uppercase;
+        margin: 15px 0;
+    }
+    @include e (content){
+        @include content;
+    }
+    @include e (btn-link){
+        text-decoration: none;
+        color: $white;
+    }
+    @include e (btn){
+        padding: 15px 18px;
+        background-color: $black;
+        border-radius: 50px;
+    }
+}
+
+.more-info-container{
+    background-image: url(../../../i/img-7.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 100px;
+}

@@ -1,0 +1,22 @@
+.grid-banner{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    @include e (box){
+        @include m (first){grid-column: 3; grid-row: 1 / 3; height: auto;}   
+    }
+    @include e (btn){
+        @include m (first){
+            margin: 0 50px 50px;
+        }
+    }
+    @include e (title){
+        @include m (first){
+            margin: 0 50px 15px;
+        }
+    }
+    @include e (sub-title){
+        @include m (first){
+            margin: 0 50px 15px;
+        }
+    }
+}

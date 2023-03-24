@@ -1,6 +1,6 @@
 .support{
     background-color: $supportColor;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
     border-bottom: 1px solid $gray;
     @include e (img){
         max-width: 55px;
@@ -9,17 +9,76 @@
         padding-left: 30px;
     }
     @include e (link){
-        text-decoration: none;
-        color: $black;
-        text-transform: uppercase;
-        font-size: 14px;
+        @include link;
     }
     @include e (content){
-        color: $gray;
         margin: 10px 0 0;
+        @include content;
     }
 }
 .support-wrapper{
     display: flex;
     margin: 30px;
+}
+
+
+.add-support{
+    padding: 0 30px;
+    @include e (head){
+        @include head;
+    }
+    @include e (heading-discription){
+        @include heading-discription;
+    }
+    @include e (box){
+        display: grid;
+        gap: 30px;
+    }
+    @include e (block){
+        * {
+            margin: 0;
+        }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid $gray;
+        border-radius: 10px;
+        padding: 30px;
+    }
+    @include e (main-link){
+        text-decoration: none;
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 30px;
+        color: $black;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+    }
+    @include e (link){
+        text-decoration: none;
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 14px;
+        color: $black;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        margin-bottom: 5px;
+    }
+    @include e (content){
+        @include content;
+    }
+    @include e (btn-link){
+        text-decoration: none;
+        color: $white;
+    }
+    @include e (btn){
+        padding: 15px 18px;
+        background-color: $black;
+        border-radius: 50px;
+    }
+    @include e (content-container){
+        align-self: flex-start;
+    }
+}
+
+.add-support-container{
+    margin-bottom: 130px;
 }

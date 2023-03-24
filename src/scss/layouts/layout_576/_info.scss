@@ -1,0 +1,25 @@
+.add-info{
+    @include e (content-container){
+    display: grid;
+    }
+    @include e (img-container){
+        grid-row: 1;
+        margin-bottom: 20px;
+    }
+}
+
+
+.more-info{
+    @include e (blocks-container){
+        display: grid;
+        gap: 30px;
+        grid-template-columns: 1 fr 1fr;
+        margin: 0 auto 30px;
+        max-width: 960px;
+    }    
+     @include e (block){
+        @include m (1){grid-column: 1;}
+        @include m (2){grid-column: 2;}
+        @include m (3){grid-column: span 2; width: 43vw; margin: 0 auto;} 
+    }
+}

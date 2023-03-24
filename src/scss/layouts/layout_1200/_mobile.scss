@@ -1,0 +1,25 @@
+.mobile-blocks{
+    padding: 0 80px;
+}
+
+
+.mobile-second{
+    max-width: 1100px;
+    margin: 0 auto;
+    @include e (block){
+        grid-template-columns: auto auto;
+    }
+    @include e (icon-container){
+        grid-column: 1;
+        @include m (1){grid-column: 2; grid-row: 1;}
+        @include m (2){grid-column: 2; grid-row: 1;}
+        @include m (3){grid-column: 2; grid-row: 1;}
+    }
+    @include e (content-container){
+        grid-column: 2;
+        padding-left: 20px;
+        @include m (1){grid-column: 1; grid-row: 1;  padding: 0 20px 0 0;}
+        @include m (2){grid-column: 1; grid-row: 1;  padding: 0 20px 0 0;}
+        @include m (3){grid-column: 1; grid-row: 1;  padding: 0 20px 0 0;}
+    }
+}

@@ -1,0 +1,14 @@
+.info{
+    grid-template-columns: repeat(3, minmax(auto, 340px));
+}
+.more-info{
+    padding-bottom: 0;
+    @include e (blocks-container){
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 0;
+    max-width: 1070px;
+}
+    @include e (block){
+        @include m (3){width: auto; grid-column: 3;}
+    }
+}

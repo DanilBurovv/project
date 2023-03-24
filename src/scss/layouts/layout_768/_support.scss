@@ -8,3 +8,24 @@
 .support-wrapper{
     justify-content: center;
 }
+
+
+.add-support{
+    @include e (box){
+        grid-template-columns: 1fr 1fr;
+    }
+    @include e (btn){
+        padding: 15px 40px;
+    }
+    @include e (btn-link){
+        font-size: 1rem;
+    }
+    @include e (block){
+        position: relative;
+    }
+    @include e (btn-container){
+        position: absolute;
+        @include m (first){top: 90%;left: 45%;}
+        @include m (second){top: 90%;left: 45%;}
+    }
+}

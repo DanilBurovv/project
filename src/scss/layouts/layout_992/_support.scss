@@ -17,3 +17,14 @@
     transition: 0.5s;
 }
 }
+
+
+.add-support{
+    @include e (block){
+        width: 435px;
+        @include m (first){justify-self: end}
+}
+    @include e (btn){
+        @include btn-hover;
+    }
+}

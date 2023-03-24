@@ -1,0 +1,51 @@
+.info-container{
+    max-width: fit-content;
+    margin: 0 auto;
+}
+.info{
+    grid-template-columns: repeat(3, minmax(auto, 280px));
+    gap: 0 30px;
+    @include e (head){
+        font-size: 40px;
+        grid-column: 1 / 4;
+        grid-row: 1;
+    }
+    @include e (heading-discription){
+        grid-column: 1 / 4;
+        grid-row: 2;
+    }
+    @include e (block){
+        display: grid;
+    }
+    @include e (icon){
+        grid-row: 1;
+        margin-bottom: 30px;
+    }
+    @include e (links){
+        grid-row: 2;
+    }
+}
+
+
+.add-info{
+    @include e (content-container){
+    display: initial;
+    }
+    @include e (img){
+        max-width: 300px;
+    }
+    @include e (img-container){
+        float: left;
+        margin: 8px 20px 0 0;
+    }
+}
+
+
+.more-info{
+    @include e (btn-link){
+        font-size: 16px;
+    }
+    @include e (btn){
+        padding: 15px 40px;
+    }
+}

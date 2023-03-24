@@ -1,0 +1,9 @@
+.add-support{
+    @include e (block){
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    @include e (content-container){
+        padding-left: 30px;
+    }
+}

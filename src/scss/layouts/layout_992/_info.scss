@@ -1,0 +1,70 @@
+.info{
+    @include e (block){
+        &:hover img{
+            transform: scale(0.9);
+            transition: 0.7s;
+        }
+        &:not(:hover )img{
+            transition: 0.7s;
+        }
+    }
+    @include e (link){
+        &:hover {
+            color: $red;
+            transition: 0.5s;
+        }
+    }
+    @include e (heading-link){
+        &:hover {
+            color: $red;
+            transition: 0.5s;
+        }
+    }
+}
+
+
+.add-info{
+    @include e (content-container){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap:0 40px;
+        &:hover img{
+            transform: scale(1.1);
+        }
+    }
+    @include e (content-title){
+        grid-column: 1;
+        grid-row: 1;
+    }
+    @include e (content){
+        grid-column: 1;
+    }
+    @include e (img){
+        width: 100%;
+        max-width: 100%;
+        transition: transform 1s ease-in;
+    }
+    @include e (figure){
+        overflow: hidden;
+    }
+    @include e (img-container){
+        grid-column: 2;
+        grid-row: span 2;
+        position: relative;
+        margin: 0;
+        width: 40vw;
+    }
+}
+
+
+.more-info{
+    @include e (btn){
+        @include btn-hover;
+    }
+    @include e (block){
+        &:hover div.more-info__circle{
+            background-color:$red;
+            transition: 0.5s;
+        }
+    }
+}

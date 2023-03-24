@@ -1,0 +1,22 @@
+.grid-banner{
+    @include e (btn){
+        @include btn-hover;
+        &:hover .grid-banner__link{
+            color: $white;
+            transition: 0.5s;
+        }
+        @include m (first){
+            margin: 0 70px 30px;
+        }
+    }
+    @include e (title){
+        @include m (first){
+            margin: 0 70px 15px;
+        }
+    }
+    @include e (sub-title){
+        @include m (first){
+            margin: 0 70px 15px;
+        }
+    }
+}

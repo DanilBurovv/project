@@ -1,0 +1,5 @@
+.site-footer{
+    @include e (bottom){
+        justify-content: space-between;
+    }
+}

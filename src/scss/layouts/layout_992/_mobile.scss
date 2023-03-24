@@ -1,0 +1,52 @@
+.mobile-blocks{
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: -80px;
+}
+
+.mobile{
+    @include e (block){
+        max-width: 300px;
+        &:hover img{
+            transition: 0.5s;
+            transform: scale(1.2);
+        }
+        &:not(:hover) img{
+            transition: 0.7s;
+        }
+    }
+    @include e (link){
+        &:hover{
+            color: $red;
+            transition: 0.5s;
+        }
+    }
+}
+
+
+.mobile-second{
+    grid-template-columns: repeat(3, 1fr);
+    @include e (head){grid-column: span 3;}
+    @include e (heading-discription){grid-column: span 3;}
+    @include e (img-container){grid-column: 2; grid-row: 3 / 6;}
+    @include e (block){
+        &:hover img{
+            transform: scale(1.1);
+            transition: 0.5s;
+        }
+        &:not(:hover) img{
+            transition: 0.7s;
+        }
+        @include m (1){grid-column: 1; grid-row: 3;}
+        @include m (2){grid-column: 1; grid-row: 4;}
+        @include m (3){grid-column: 1; grid-row: 5;}
+        @include m (4){grid-column: 3; grid-row: 3;}
+        @include m (5){grid-column: 3; grid-row: 4;}
+        @include m (6){grid-column: 3; grid-row: 5;}
+    }
+    @include e (title-link){
+        &:hover{
+            color: $red;
+            transition: 0.5s;
+        }
+    }
+}
