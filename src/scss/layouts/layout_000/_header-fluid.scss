@@ -1,4 +1,12 @@
+.header-fluid *{
+    font-weight: $mediumFontWeight;
+}
+
 .header-fluid{
+    background-color: rgb(255, 255, 255, 0.9);
+    position: fixed;
+    width: 100vw;
+    z-index: 9999;
     display: flex;
     padding: 15px 0;
     flex-wrap: wrap;
@@ -45,4 +53,19 @@
     margin-left: 10px;
     border: none;
     outline: none;
+}
+
+.up-btn-cont{
+    display: none;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 9999;
+}
+
+.up-btn{
+    background-color: $black;
+    padding: 15px;
+    border: 1px solid $white;
+    border-radius: 50px;
 }

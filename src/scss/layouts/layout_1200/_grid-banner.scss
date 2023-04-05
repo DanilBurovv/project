@@ -5,18 +5,21 @@
         @include m (first){grid-column: 3; grid-row: 1 / 3; height: auto;}   
     }
     @include e (btn){
+        margin-left: 60px;
         @include m (first){
-            margin: 0 50px 50px;
+            margin: 0 60px 80px;
         }
     }
     @include e (title){
+        margin-left: 60px;
         @include m (first){
-            margin: 0 50px 15px;
+            margin: 0 60px 15px;
         }
     }
     @include e (sub-title){
+        margin-left: 60px;
         @include m (first){
-            margin: 0 50px 15px;
+            margin: 0 60px 15px;
         }
     }
 }

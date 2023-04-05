@@ -1,5 +1,9 @@
+.post-top{
+    margin-top: 80px;
+}
+
 .slider-top {
-    height: 700px;
+    height: 650px;
         @include e(content-container){
             width: 760px;
             left: 37%;
@@ -10,9 +14,8 @@
             font-size: 100px;
         }
     }
-    @include e (button){
-        @include m (next){
-            left: 96%;
-        }
     }
-    }
+
+.second-container{
+    left: 2%;
+}

@@ -7,9 +7,8 @@
         margin-left: auto;
         background-color: initial;
     }
-    @include e (button){
-        @include m (next){
-            left: 92%;
-        }
-    }
+}
+
+.second-container{
+    left: 10%;
 }

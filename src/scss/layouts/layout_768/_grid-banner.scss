@@ -12,18 +12,15 @@
     }
     @include e (btn){
         padding: 15px 40px;
-        @include m (first){
-            margin: 0 60px 30px;
-        }
+        margin: 0 6vw 7vh;
+        @include m (first){margin-left: 10vw;}
     }
     @include e (title){
-        @include m (first){
-            margin: 0 60px 15px;
-        }
+        margin: 0 6vw 15px;
+        @include m (first){margin-left: 10vw;}
     }
     @include e (sub-title){
-        @include m (first){
-            margin: 0 60px 15px;
-        }
+        margin: 0 6vw 15px;
+        @include m (first){margin-left: 10vw;}
     }
 }
