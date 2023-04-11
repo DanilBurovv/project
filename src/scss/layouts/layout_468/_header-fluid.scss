@@ -1,13 +1,9 @@
-.header-fluid{
-    justify-content: initial;
-    @include e (logo) {
-    }
-}
+
 
 .header-links {
  flex-basis: initial;
 @include e (link){
-    margin-top: -6px;
+    margin-top: -20px;
 }
 }
 

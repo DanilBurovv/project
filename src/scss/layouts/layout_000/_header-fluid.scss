@@ -1,39 +1,3 @@
-.header-fluid *{
-    font-weight: $mediumFontWeight;
-}
-
-.header-fluid{
-    background-color: rgb(255, 255, 255, 0.9);
-    position: fixed;
-    width: 100vw;
-    z-index: 9999;
-    display: flex;
-    padding: 15px 0;
-    flex-wrap: wrap;
-    @include e (logo){
-        max-width: 129px;
-        margin-left: 60px;
-        margin-right: auto;
-    }
-}
-
-.header-nav {
-    display: flex;
-    flex-wrap: wrap;
-    @include e (list){
-        display: none;
-    }
-}
-
-.header-menu{
-    padding: 0 10px;
-    margin-top: 15px;
-    margin-right: 20px;
-    @include e (span){
-        display: none;
-    }
-}
-
 .header-links {
     flex-basis: 100%;
     margin-top: 20px;
@@ -68,4 +32,13 @@
     padding: 15px;
     border: 1px solid $white;
     border-radius: 50px;
+}
+
+/*---------------navbar------------------*/
+
+.navbar{
+    position: fixed;
+    z-index: 9999;
+    background-color: rgb(255, 255, 255, 0.9);
+    width: 100%;
 }

@@ -3,16 +3,8 @@
     margin-right: 80px;
 }
 
-.header-nav{
-    @include e (link){
-        &:hover {
-            color: $red;
-            transition: 0.5s;
-        }
-    }
-}
-
 .header-links{
+    margin-left: 1.5rem;
     @include e (link){
         &:hover svg{
             fill: $red;

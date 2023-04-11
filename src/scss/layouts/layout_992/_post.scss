@@ -1,0 +1,98 @@
+.post-top{
+    margin-top: 70px;
+}
+
+.slider-top{
+    @include e(content-container){
+        width: 440px;
+        left: 55%;
+    }
+    @include e (content){
+    @include m (title){
+        font-size: 30px;
+    }
+    @include m (heading){
+        font-family: 'Work Sans', sans-serif;
+    }
+    @include m (btn-container){
+
+    }
+    @include m (btn){
+       @include btn-hover{border: 1px solid $red};
+    }
+    }
+}
+
+.second-container{
+    left: 15%;
+}
+
+.second-btn{
+    &:hover{color: $white;}
+}
+
+.myarrow:hover {
+    background-image: url(../../../i/myarrow2.svg);
+    transition: 0.5s;
+}
+
+.myarrow_prev {left: -70px;}
+.myarrow_next {right: -70px;}
+
+.slick-slider:hover .myarrow_prev {left: 1%;}
+.slick-slider:hover .myarrow_next {right: 1%}
+
+/*------------------------------post-bottom---------------------------------*/
+
+.slide:hover .overlay{
+    height: 10px;
+    overflow: visible;
+}
+
+.slide{
+    &:hover{
+        border: 2px solid $red;
+    }
+}
+
+.slider-bottom .myarrow_next{
+    right: 0;
+}
+
+.slider-bottom .myarrow_prev{
+    left: 0;
+}
+
+.slider-bottom:hover .myarrow_next{
+    right: 0;
+}
+
+.slider-bottom:hover .myarrow_prev{
+    left: 0;
+}
+
+.slider-bottom{
+    @include e (btn){
+        &:hover{
+            background-color: $red;
+            transition: 0.5s;
+        }
+    }
+
+    @include e (link){
+        &:hover {
+            color: $red;
+            transition: .5s;
+        }
+    }
+}
+
+.change-photos:hover .change-photo:nth-of-type(2) {
+    opacity: 1;
+    transition: 1s;
+}
+
+.change-photos:hover .change-photo:nth-of-type(1) {
+    opacity: 0;
+    transition: 1s;
+}

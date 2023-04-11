@@ -1,7 +1,3 @@
-.post-top{
-    margin-top: 80px;
-}
-
 .slider-top {
     height: 650px;
         @include e(content-container){
@@ -18,4 +14,10 @@
 
 .second-container{
     left: 2%;
+}
+
+/*-----------------------------------slider-bottom-----------------------------------*/
+
+.slider-bottom{
+    max-width: 1090px;
 }

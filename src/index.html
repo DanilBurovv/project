@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="container">
-  <header class="header">
+
     <div id="search" class="products-search">
       <div class="search-form">
         <input class="search-form__txt" type="text" placeholder="Search Our Store">
@@ -26,54 +26,181 @@
         </button>
     </div> <!--/.products-search-->
 
-    <div class="header-fluid">
-      <div class="header-fluid__logo">
-      <img class="header-fluid__logo-img" src="i/logo.png">
-      </div>
-      <nav class="header-nav">
-        <ul class="header-nav__list">
-          <li class="header-nav__item"><a href="#" class="header-nav__link header-nav__link_home">Home</a></li>
-          <li class="header-nav__item"><a href="#" class="header-nav__link">Collection <span class="header-nav__link-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="8px" height="6px">
-            <svg class="header-nav__svg" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="i/sprite.svg#arrow_1" /></span></a></li>
-          <li class="header-nav__item"><a href="#" class="header-nav__link">Shop</a></li>
-          <li class="header-nav__item"><a href="#" class="header-nav__link">Android</a></li>
-          <li class="header-nav__item"><a href="#" class="header-nav__link">Accessories</a></li>
-          <li class="header-nav__item"><a href="#" class="header-nav__link">Memory & Storage</a></li>
-          <li class="header-nav__item"><a href="#" class="header-nav__link">Pages <span class="header-nav__link-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="8px" height="6px">
-            <svg class="header-nav__svg" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="i/sprite.svg#arrow_1" /></span></a></li>
-        </ul>
+    <header class="navbar">
+      <a href="index.html" class="logo">
+          <img src="./i/logo.png" alt="Beetroot"></a>
+
+ 
+  <!--   DESKTOP menu START   -->
+     <nav class="menu">
+          <ul class="menu-desktop">
+            <li><a href="#" class="menu-home">Home</a></li>
+              <li class="has-submenu">
+                  <a href="#">Collection</a>
+                  <ul>
+                      <li class="has-submenu">
+                          <a href="#" class="is-submenu">ssd card</a>
+                          <ul>
+                              <li><a href="#">Affinity M20</a></li>
+                              <li><a href="#">Affinity P40 Pro</a></li>
+                              <li><a href="#">PO V40 ThinQ</a></li>
+                              <li><a href="#">Tencho 7.3</a></li>
+                              <li><a href="#">Tencho 8.1</a></li>
+                              <li><a href="#">Nexian</a></li>
+                          </ul>
+                      </li>
+                      <li class="has-submenu">
+                          <a href="#" class="is-submenu">power banks</a>
+                          <ul>
+                              <li><a href="#">Spots 8 Lite</a></li>
+                              <li><a href="#">Spots ERA 5X</a></li>
+                              <li><a href="#">Tencho 8.1</a></li>
+                              <li><a href="#">Phonelink</a></li>
+                              <li><a href="#">Musah</a></li>
+                          </ul>
+                      </li>
+                      <li class="has-submenu">
+                          <a href="#" class="is-submenu">earphone</a>
+                          <ul>
+                              <li><a href="#">Spots Y93 1815</a></li>
+                              <li><a href="#">Tencho F12 Pro</a></li>
+                              <li><a href="#">Telefonika</a></li>
+                              <li><a href="#">T-Blast</a></li>
+                          </ul>
+                      </li>
+                      <li class="has-submenu">
+                          <a href="#" class="is-submenu">Android</a>
+                          <ul>
+                              <li><a href="#">Tencho 10 Lite</a></li>
+                              <li><a href="#">Tencho 7.3</a></li>
+                              <li><a href="#">Spectrum</a></li>
+                              <li><a href="#">Hisense</a></li>
+                              <li><a href="#">Bluesky</a></li>
+                          </ul>
+                      </li>
+                  </ul>
+              </li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">Memory & Storage</a></li>
+              <li class="has-submenu">
+                  <a href="#">Pages</a>
+                  <ul>
+                      <li><a href="#">About us</a></li>
+                      <li><a href="#">Contact us</a></li>
+                      <li><a href="#">Blog</a></li>
+                      <li><a href="#">Faq's</a></li>
+                  </ul>
+              </li>
+          </ul>
       </nav>
 
-        <div class="header-menu"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="13">
-          <svg class="header-menu__svg" xmlns="http://www.w3.org/2000/svg">
-            <use xlink:href="i/sprite.svg#nav" /> <span class="header-menu__span">Menu</span>
-          </div>
+      <a href="#" class="menu-button">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+      </a>
+      <div class="header-links">
+        <a href="#" class="header-links__link"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16">
+         <svg class="header-links__svg" xmlns="http://www.w3.org/2000/svg">
+           <use xlink:href="i/sprite.svg#Icon" /></a>
+        <a href="#" class="header-links__link"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16">
+         <svg class="header-links__svg" xmlns="http://www.w3.org/2000/svg">
+           <use xlink:href="i/sprite.svg#basket" /></a>
+         <button id="open-btn" class="header-links__link open-btn">
+           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16">
+         <svg class="header-links__svg" xmlns="http://www.w3.org/2000/svg">
+           <use xlink:href="i/sprite.svg#search" /></button>
+         
+               <select name="header-currency" class="header-currency">
+                 <option value="usd">usd</option>
+               </select>
+      </div>
+      
+<!--   DESKTOP menu END   -->
+  </header>
 
-        <div class="header-links">
-         <a href="#" class="header-links__link"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16">
-          <svg class="header-links__svg" xmlns="http://www.w3.org/2000/svg">
-            <use xlink:href="i/sprite.svg#Icon" /></a>
-         <a href="#" class="header-links__link"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16">
-          <svg class="header-links__svg" xmlns="http://www.w3.org/2000/svg">
-            <use xlink:href="i/sprite.svg#basket" /></a>
-          <button id="open-btn" class="header-links__link open-btn">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16">
-          <svg class="header-links__svg" xmlns="http://www.w3.org/2000/svg">
-            <use xlink:href="i/sprite.svg#search" /></button>
-          
-                <select name="header-currency" class="header-currency">
-                  <option value="usd">usd</option>
-                </select>
-       </div>
-    </div><!--/.header-fluid-->
+  <!--   Mobile menu START   -->
+  <div class="dark-overlay"></div>
+
+  <div class="mobile-menu">
+       <a href="#" class="menu-button in-mobile active">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+      </a>
+
+      <nav class="mobile-navigation">
+          <ul>
+              <li><a href="#" class="menu-home">Home</a></li>
+              <li class="has-submenu">
+                  <a class="is-submenu" href="#">Collection</a>
+                  <ul>
+                      <li class="has-submenu">
+                          <a class="is-submenu is-submenu-link" href="#">ssd card</a>
+                          <ul>
+                            <li><a href="#">Affinity M20</a></li>
+                            <li><a href="#">Affinity P40 Pro</a></li>
+                            <li><a href="#">PO V40 ThinQ</a></li>
+                            <li><a href="#">Tencho 7.3</a></li>
+                            <li><a href="#">Tencho 8.1</a></li>
+                            <li><a href="#">Nexian</a></li>
+                          </ul>
+                      </li>
+                      <li class="has-submenu">
+                          <a class="is-submenu is-submenu-link" href="#">power banks</a>
+                          <ul>
+                            <li><a href="#">Spots 8 Lite</a></li>
+                            <li><a href="#">Spots ERA 5X</a></li>
+                            <li><a href="#">Tencho 8.1</a></li>
+                            <li><a href="#">Phonelink</a></li>
+                            <li><a href="#">Musah</a></li>
+                          </ul>
+                      </li>
+                      <li class="has-submenu">
+                          <a class="is-submenu is-submenu-link" href="#">earphones</a>
+                          <ul>
+                            <li><a href="#">Spots Y93 1815</a></li>
+                            <li><a href="#">Tencho F12 Pro</a></li>
+                            <li><a href="#">Telefonika</a></li>
+                            <li><a href="#">T-Blast</a></li>
+                          </ul>
+                      </li>
+                      <li class="has-submenu">
+                          <a class="is-submenu is-submenu-link" href="#">android</a>
+                          <ul>                             
+                            <li><a href="#">Tencho 10 Lite</a></li>
+                            <li><a href="#">Tencho 7.3</a></li>
+                            <li><a href="#">Spectrum</a></li>
+                            <li><a href="#">Hisense</a></li>
+                            <li><a href="#">Bluesky</a></li>
+                          </ul>
+                      </li>
+                  </ul>
+              </li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">Memory & Storage</a></li>
+              <li class="has-submenu">
+                  <a class="is-submenu" href="#">Pages</a>
+                  <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Faq's</a></li>
+                  </ul>
+              </li>
+          </ul>
+      </nav>
+  </div>
+<!-- /   Mobile menu END  -->
+
+
 
     <div id="scrollBtn" class="up-btn-cont"><button class="up-btn"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
       <svg class="up-svg" xmlns="http://www.w3.org/2000/svg">
         <use xlink:href="i/sprite.svg#capa_1"/></button></div> <!-- /.up-btn-cont-->
   
-      </header>
   <div class="wrapper">
     <div class="post-top">
       <div class="slick-slider">
@@ -316,6 +443,90 @@
   
   </div><!-- /.mobile-second-->
 </div><!-- /.mobile-second-container-->
+
+<div class="post-bottom">
+  <h2 class="post-bottom__head">new arrivals</h2>
+  <p class="post-bottom__heading-discription">find the perfect phone for you</p>
+  <div class="slider-bottom">
+    
+    <div class="slide">
+      <div class="change-photos">
+        <div class="change-photo"><img src="./i/p5.png"></div>
+        <div class="change-photo"><img src="./i/p7.png"></div>
+        <div class="overlay">
+          <button class="slider-bottom__btn slider-bottom__btn_first">Quick View</button>
+          <button class="slider-bottom__btn">Select Options</button>
+        </div>
+      </div>
+      <div class="slider-bottom__content">
+        <h5 class="slider-bottom__title"><a href="#" class="slider-bottom__link">spectronic xr</a></h5>
+        <p class="slider-bottom__price">$935.03</p>
+      </div>
+    </div> 
+    
+    <div class="slide">
+      <div class="change-photos">
+        <div class="change-photo"><img src="./i/p3.png"></div>
+        <div class="change-photo"><img src="./i/p2.png"></div>
+        <div class="overlay">
+          <button class="slider-bottom__btn slider-bottom__btn_first">Quick View</button>
+          <button class="slider-bottom__btn">Select Options</button>
+        </div>
+      </div>
+      <div class="slider-bottom__content">
+        <h5 class="slider-bottom__title"><a href="#" class="slider-bottom__link">tencho 10 lite</a></h5>
+        <p class="slider-bottom__price">$79.00</p>
+      </div>
+    </div> 
+    
+    <div class="slide">
+      <div class="change-photos">
+        <div class="change-photo"><img src="./i/p12.png"></div>
+        <div class="change-photo"><img src="./i/p7.png"></div>
+        <div class="overlay">
+          <button class="slider-bottom__btn slider-bottom__btn_first">Quick View</button>
+          <button class="slider-bottom__btn">Select Options</button>
+        </div>
+      </div>
+      <div class="slider-bottom__content">
+        <h5 class="slider-bottom__title"><a href="#" class="slider-bottom__link">affinity p40 pro</a></h5>
+        <p class="slider-bottom__price">$364.75</p>
+      </div>
+    </div> 
+    
+    <div class="slide">
+      <div class="change-photos">
+        <div class="change-photo"><img src="./i/p6.png"></div>
+        <div class="change-photo"><img src="./i/p12.png"></div>
+        <div class="overlay">
+          <button class="slider-bottom__btn slider-bottom__btn_first">Quick View</button>
+          <button class="slider-bottom__btn">Select Options</button>
+        </div>
+      </div>
+      <div class="slider-bottom__content">
+        <h5 class="slider-bottom__title"><a href="#" class="slider-bottom__link">spots 8 lite</a></h5>
+        <p class="slider-bottom__price">$ 206.69</p>
+      </div>
+    </div> 
+    
+    <div class="slide">
+      <div class="change-photos">
+        <div class="change-photo"><img src="./i/p8.png"></div>
+        <div class="change-photo"><img src="./i/p4.png"></div>
+        <div class="overlay">
+          <button class="slider-bottom__btn slider-bottom__btn_first">Quick View</button>
+          <button class="slider-bottom__btn">Select Options</button>
+        </div>  
+      </div>
+      <div class="slider-bottom__content">
+        <h5 class="slider-bottom__title"><a href="#" class="slider-bottom__link">po v40 thinq</a></h5>
+        <p class="slider-bottom__price">$401.20</p>
+      </div>
+    </div> 
+    
+
+  </div> <!-- /.slider-bottom-->
+</div> <!-- /.post-bottom-->
 
 <div class="grid-banner-container">
   <div class="grid-banner">
