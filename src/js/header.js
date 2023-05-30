@@ -2,11 +2,13 @@ const openBtn = document.getElementById('open-btn')
 const closeBtn = document.getElementById('close-btn')
 const searchCont = document.getElementById('search')
 const svg = openBtn.querySelector('svg')
+const myInput = document.getElementById('myInput')
 
 openBtn.addEventListener('click', handleOpen);
 
 function handleOpen() {
     searchCont.style.height = '90px';
+    myInput.focus();
   }
 
   svg.addEventListener('click', svgOpen);
@@ -58,3 +60,4 @@ scrollBtn.addEventListener("click", function() {
     behavior: "smooth"
   });
 });
+

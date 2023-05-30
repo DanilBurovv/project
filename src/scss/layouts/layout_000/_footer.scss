@@ -61,7 +61,6 @@
         list-style-type: none;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
         padding: 0;
     }
     @include e (link){
@@ -71,6 +70,7 @@
         text-transform: uppercase;
         &::before{content: '|'; padding: 0 15px;} 
         @include m (first){
+            padding-left: 15px;
             &::before{content: none;}
         }
     }

@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>title</title>
+    <title>Phono</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="css/slick.css" />
   </head>
   <body>
     <div class="container">
 
     <div id="search" class="products-search">
       <div class="search-form">
-        <input class="search-form__txt" type="text" placeholder="Search Our Store">
+        <input id="myInput" class="search-form__txt" type="text" placeholder="Search Our Store">
         <button class="search-form__btn">
           <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="21px">
             <svg class="search-form__image" xmlns="http://www.w3.org/2000/svg">
@@ -28,7 +27,7 @@
 
     <header class="navbar">
       <a href="index.html" class="logo">
-          <img src="./i/logo.png" alt="Beetroot"></a>
+          <img src="./i/logo.png"></a>
 
  
   <!--   DESKTOP menu START   -->
@@ -82,7 +81,7 @@
               </li>
               <li><a href="#">Shop</a></li>
               <li><a href="#">Memory & Storage</a></li>
-              <li class="has-submenu">
+              <li class="has-submenu pages">
                   <a href="#">Pages</a>
                   <ul>
                       <li><a href="#">About us</a></li>
@@ -374,7 +373,7 @@
 
     <div class="more-info__block more-info__block_2"><div class="more-info__circle"><p class="more-info__circle-content">2</p></div>
       <h5 class="more-info__title">ultra game mode</h5>
-      <p class="more-info__content">Urna et pharetra pharetra massa massa ultricies mi. Scelerisque varius morbi enim nunc faucibus a pellentesque. Purus sit amet volutpat consequat mauris.</p>
+      <p class="more-info__content">Urna et pharetra pharetra massa massa ultricies mi. Scelerisque scelerisque varius varius morbi morbi enim nunc faucibus a pellentesque. Purus sit amet volutpat consequat mauris.</p>
       <div class="more-info__btn-container"><button class="more-info__btn"><a href="#" class="more-info__btn-link">View More</a></button></div>
     </div>
 
@@ -614,7 +613,7 @@
       <div class="add-support__content-container">
       <h6 class="add-support__link-container"><a href="#" class="add-support__link">wanna talk to us?</a></h6>
       <h5 class="add-support__main-link-cont"><a href="#" class="add-support__main-link">live chat now</a></h5>
-      <p class="add-support__content"> Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo.Lorem ipsum dolor</p>
+      <p class="add-support__content"> Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt tincidunt tincidunt. Duis leo.Lorem ipsum dolor</p>
       <div class="add-support__btn-container add-support__btn-container_second"><button class="add-support__btn"><a href="#" class="add-support__btn-link">View More</a></button></div>
     </div>
     </div>
@@ -630,14 +629,17 @@
           <p class="site-footer__content">Get our updates always fast</p>
         <h5 class="site-footer__title">your personal data will always be safe</h5>
         
-        <div class="site-footer__email">
-          <input class="site-footer__txt" type="text" placeholder="Your email address">
-          <button class="site-footer__btn">
-            <svg xmlns="http://www.w3.org/2000/svg" width="10px" height="12px">
-              <svg class="site-footer__image" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="i/sprite.svg#mail-arrow"/>       
-          </button>
-        </div>
+          <form class="site-footer__email" id="email-form" action="#" method="post">
+            <input class="site-footer__txt" type="email" placeholder="Your email address" required>
+            <button class="site-footer__btn" type="submit">
+              <svg xmlns="http://www.w3.org/2000/svg" width="10px" height="12px">
+                <svg class="site-footer__image" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="i/sprite.svg#mail-arrow"/>
+                </svg>
+              </svg>
+            </button>
+          </form>
+
         <ul class="site-footer__menu">
           <li class="site-footer__list"><a href="#" class="site-footer__link site-footer__link_first">search</a></li>
           <li class="site-footer__list"><a href="#" class="site-footer__link">help</a></li>

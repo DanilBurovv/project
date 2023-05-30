@@ -77,6 +77,8 @@
         margin-bottom: 30px;
     }
     @include e (block){
+        display: flex;
+        flex-direction: column;
         padding: 30px;
         background-color: $white;
         * {
@@ -103,6 +105,7 @@
     }
     @include e (content){
         @include content;
+        flex: 1;
     }
     @include e (btn-link){
         text-decoration: none;

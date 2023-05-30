@@ -45,16 +45,6 @@
         border-radius: 50px;
     }
 }
-    @include e (btn-prev){
-        padding: 10px;
-        background-color: $black;
-        border-radius: 50%;
-    }
-    @include e (btn-next){
-        padding: 10px;
-        background-color: $black;
-        border-radius: 50%;
-    }
 }
 
 .second-container *{
@@ -80,7 +70,9 @@
     margin-top: -32px;
     width: 40px;
     height: 40px;
-    z-index: 9999;
+    border: 1px solid $white;
+    border-radius: 50%;
+    z-index: 9998;
     transition: all 1s ease-in;
     background: url(../../../i/myarrow.svg) no-repeat;
     cursor: pointer;

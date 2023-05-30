@@ -16,6 +16,8 @@
         max-width: 80vw;
     }
     @include e (block){
+        display: flex;
+        flex-direction: column;
         text-align: center;
     }
     @include e (link){
@@ -23,6 +25,9 @@
     }
     @include e (content){
         @include content;
+    }
+    @include e (content-head){
+        flex: 1;
     }
 }
 

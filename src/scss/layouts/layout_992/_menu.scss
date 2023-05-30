@@ -51,6 +51,7 @@
     transition: all 200ms ease;
     z-index: 10000;
     border-radius: 5px;
+    border: 1px solid $gray;
 }
 
 .menu li:hover > ul {
@@ -109,5 +110,13 @@
     padding: 10px 20px;
 }
 
+.menu li ul li.has-submenu:hover{
+    background-color: $lightGray;
+}
 
-
+.menu li ul li ul li:hover{
+    background-color: $lightGray;
+}
+.pages ul li:hover{
+    background: $lightGray;
+}

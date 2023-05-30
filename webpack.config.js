@@ -12,6 +12,7 @@ const jsArr = [
   path.resolve(__dirname, "src/js/slick.min.js"),
   path.resolve(__dirname, "src/js/ssm.min.js"),
   path.resolve(__dirname, "src/js/header.js"),
+  path.resolve(__dirname, "src/js/footer.js"),
   path.resolve(__dirname, "src/js/slider.js"),
   path.resolve(__dirname, "src/js/menu.js"),
   path.resolve(__dirname, "src/js/script.js"),

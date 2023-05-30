@@ -9,23 +9,27 @@ function handleMenu(e) {
   e.preventDefault();
   darkOverlay.toggleClass("visible");
   mobileMenu.toggleClass("visible");
+
+  if (mobileMenu.hasClass("visible")) {
+    darkOverlay.on("click", function () {
+      resetMobileMenu();
+      darkOverlay.off("click");
+    });
+  }
 }
 
 function handleToggleMenu(e) {
   e.preventDefault();
   const $this = $(this);
-  $this.parent(".has-submenu").toggleClass("opened");
-  $this.next("ul").slideToggle(500, function () {
+  const $submenu = $this.next("ul");
+  const $parent = $this.parent(".has-submenu");
+
+  $parent.toggleClass("opened");
+  $submenu.slideToggle(500, function () {
     $(this).find(".has-submenu").removeClass("opened").children("ul").hide();
   });
 
-  $this
-    .parent(".has-submenu")
-    .toggleClass("opened")
-    .siblings("li")
-    .removeClass("opened")
-    .find("ul")
-    .hide();
+  $parent.siblings("li").removeClass("opened").find("ul").hide();
 }
 
 function resetMobileMenu() {
