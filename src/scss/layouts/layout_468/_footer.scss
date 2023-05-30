@@ -1,0 +1,10 @@
+.site-footer{
+    @include e (menu){
+        justify-content: center;
+    }
+    @include e (link){
+        @include m (first){
+            padding: 0;
+        }
+    }
+}
